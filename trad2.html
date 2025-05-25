@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>Trad Bites - Botswana Traditional Food</title>
+<link rel="stylesheet" href="style.css"/>
+
+</head>
+<body>
+    <div id="divmaincontainer">
+<header id= "header" class="master">
+  <h1 id="sitetitle"> TRAD BITES</h1>
+  <span id="sitemotto">Preserving the rich culinary heritage of Botswana!</span>
+</div>
+</header>
+<nav aria-label="Primary">
+  <ul role="menubar">
+    <li role="none"><button role="menuitem" class="nav-btn active" data-target="home" aria-current="page">Home</button></li>
+    <li role="none"><button role="menuitem" class="nav-btn" data-target="menu">Menu</button></li>
+    <li role="none"><button role="menuitem" class="nav-btn" data-target="order">Order</button></li>
+    <li role="none"><button role="menuitem" class="nav-btn" data-target="about">About Us</button></li>
+    <li role="none"><button role="menuitem" class="nav-btn" data-target="contact">Contact</button></li>
+  </ul>
+  <div id="search-container" role="search">
+    <input id="search-input" type="search" placeholder="Search..." aria-label="Search site content" autocomplete="off" />
+    <button id="search-clear" aria-label="Clear search">&times;</button>
+  </div>
+</nav>
+
+<main>
+  <section id="home" class="page active" tabindex="0" aria-label="Home page">
+    <h1>Welcome to Trad Bites</h1>
+    <p>Experience the authentic flavors of Botswana through our delicious traditional food offerings. At Trad Bites, we take pride in serving recipes passed down through generations, made with fresh local ingredients and lots of love.</p>
+    <p>Order online or visit us to enjoy the rich culinary heritage of Botswana right at your fingertips.</p>
+  </section>
+  
+<div class="slideshow">
+  
+</div>
+
+  <section id="menu" class="page" tabindex="0" aria-label="Menu page">
+    <h2>Our Menu</h2>
+    <div class="menu-item">
+      <h3>Seswaa(pounded meat)</h3>
+      <p>Slow-cooked tender beef shredded and served with pap or samp.</p>
+      <span class="price">P25</span>
+    </div>
+    <div class="menu-item">
+      <h3>Dikgobe(samp and beans)</h3>
+      <p>Samp and beans cooked together until tender</p>
+      <span class="price">P20</span>
+    </div>
+    <div class="menu-item">
+      <h3>Morogo wa dinawa(Bean leaves)</h3>
+      <p>Traditional bean leaves dish cooked with onions, tomatoes, and peanut butter.</p>
+      <span class="price">P8</span>
+    </div>
+    <div class="menu-item">
+      <h3>Mophane worms</h3>
+      <p>Dried mophane worms dish with or without vegetables.</p>
+      <span class="price">P20</span>
+    </div>
+    <div class="menu-item">
+      <h3>Bogobe jwa legala(Maize meal cooked in milk)</h3>
+      <p>A tasty maize porridge cooked in boiling milk.</p>
+      <span class="price">P18</span>
+    </div>
+        <div class="menu-item">
+      <h3>Ting (Fermented sorghum meal)</h3>
+      <p>It is sorghum porridge made from fermented sorghum meal and water mixture.</p>
+      <span class="price">P16</span>
+    </div>
+     <div class="menu-item">
+      <h3>Serobe(Tripe)</h3>
+      <p>A tasty dish of cow tripe, intestines and other offals.</p>
+      <span class="price">P25</span>
+    </div>
+       <div class="menu-item">
+      <h3>Nama ya kgomo(Beef stew)</h3>
+      <p>A traditional beef stew cooked with vegetables.</p>
+      <span class="price">P25</span>
+    </div>
+    <div class="menu-item">
+      <h3>Nama ya koko(Setswana chicken stew)</h3>
+      <p>A traditional setswana chicken stew.</p>
+      <span class="price">P25</span>
+    </div>
+     <div class="menu-item">
+      <h3>Tswii(Water lily)</h3>
+      <p>Edible tubers of water lily often cooked with beef or fish.</p>
+      <span class="price">P30</span>
+    </div>
+    <div class="menu-item">
+      <h3>Tlhapi(Fried fish)</h3>
+      <p>A traditional fried bream fish.</p>
+      <span class="price">P20</span>
+    </div>
+       <div class="menu-item">
+      <h3>Bogobe jwa phaleche(Maize meal porridge)</h3>
+      <p>A traditional maize meal porridge often served with meat or milk.</p>
+      <span class="price">P12</span>
+    </div>
+        <div class="menu-item">
+      <h3>Bogobe jwa mabele(Sorghum meal porridge)</h3>
+      <p>A sorghum meal porridge that can be enjoyed with meat or milk.</p>
+      <span class="price">P15</span>
+    </div>
+        <div class="menu-item">
+      <h3>Madila(Sour milk)</h3>
+      <p>Fermented cow milk enjoyed with porridge.</p>
+      <span class="price">P10</span>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </section>
+
+  <section id="order" class="page" tabindex="0" aria-label="Order page">
+    <h2>Place Your Order</h2>
+    <form id="order-form" aria-live="polite" novalidate>
+      <label for="food-select">Choose Food Item</label>
+      <select id="food-select" required aria-required="true" aria-describedby="food-help">
+        <option value="" disabled selected>-- Select a dish --</option>
+        <option value="Seswaa" data-price="25">Seswaa - P25</option>
+        <option value="Dikgobe(samp and beans)" data-price="20">Dikgobe(samp and beans) - P20</option>
+        <option value="Morogo wa dinawa(Bean leaves)" data-price="8">Morogo wa dinawa(Bean leaves) - P8</option>
+        <option value="Mophane worms" data-price="20">Mophane worms - P20</option>
+        <option value="Bogobe jwa legala(Maize meal cooked in milk)" data-price="25">Bogobe jwa mabele(sorghum meal) - P25</option>
+        <option value="Ting(Fermented sorghum meal)" data-price="16">Ting(Fermented sorghum meal)- P16</option>
+        <option value="Serobe(Tripe)" data-price="25">Serobe(Tripe) - P25</option>
+        <option value="Nama ya kgomo(Beef stew)" data-price="25">Nama ya kgomo(Beef stew) - P25</option>
+        <option value="Nama ya koko(Setswana chicken stew)" data-price="25">Nama ya koko(Setswana chicken stew)- P25</option>
+        <option value="Tswii(Water lilly)" data-price="30">Tswii(Water lilly) - P30</option>
+         <option value="Tlhapi(Fried bream fish)" data-price="20">Tlhapi(Fried bream fish) - P20</option>
+        <option value="Bogobe jwa phaleche(Maize meal porridge)" data-price="12">Bogobe jwa phaleche(Maize meal porridge) - P12</option>
+        <option value="Bogobe jwa mabele(sorghum meal)" data-price="15">Bogobe jwa mabele(sorghum meal) - P15</option>
+        <option value="Madila(Sour milk)" data-price="10">Madila(Sour milk) - P10</option>
+        
+        
+        
+      </select>
+      <small id="food-help">Select the traditional dish you want to order.</small>
+      
+      
+      <label for="quantity-input">Quantity</label>
+      <input type="number" id="quantity-input" min="1" max="20" value="1" required aria-required="true"/>
+
+      <label for="delivery-select">Delivery Option</label>
+      <select id="delivery-select" required aria-required="true">
+        <option value="" disabled selected>-- Select delivery option --</option>
+        <option value="pickup">Pickup (Free)</option>
+        <option value="home-delivery">Home Delivery (+P20)</option>
+      </select>
+
+      <div id="delivery-details" style="display:none;">
+        <label for="address-input">Delivery Address</label>
+        <textarea id="address-input" rows="3" placeholder="Enter your delivery address"></textarea>
+
+        <label for="phone-input">Phone Number</label>
+        <input type="tel" id="phone-input" pattern="\\+?\\d{7,15}" placeholder="+267 7XX XXX XXX" />
+      </div>
+
+      <button type="submit" class="submit-btn">Submit Order</button>
+    </form>
+    <div id="order-summary" role="alert" aria-live="assertive" style="display:none;"></div>
+  </section>
+
+  <section id="about" class="page" tabindex="0" aria-label="About Us page">
+    <h2>About Trad Bites</h2>
+    <p>Trad Bites was founded to celebrate the rich culinary heritage of Botswana. Our mission is to bring authentic traditional foods to your table with convenience and care.</p>
+    <p>Our ingredients are locally sourced, and we prepare every dish following authentic recipes that preserve the cultural essence of Botswana cuisine. Whether you're craving Seswaa or Morogo, we've got you covered.</p>
+  </section>
+
+  <section id="contact" class="page" tabindex="0" aria-label="Contact page">
+    <h2>Contact Us</h2>
+    <form id="contact-form" aria-live="polite" novalidate>
+      <label for="name-input">Name</label>
+      <input type="text" id="name-input" required aria-required="true" placeholder="Your Name" />
+
+      <label for="email-input">Email</label>
+      <input type="email" id="email-input" required aria-required="true" placeholder="you@example.com" />
+
+      <label for="message-textarea">Message</label>
+      <textarea id="message-textarea" rows="4" required aria-required="true" placeholder="Write your message here"></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+    <div id="contact-feedback" role="alert" aria-live="assertive" style="display:none; margin-top:12px; color:#7a2b33; font-weight:600;"></div>
+  </section>
+
+  <section id="search-results" aria-label="Search results" tabindex="0">
+    <h2>Search Results</h2>
+    <div id="results-list" aria-live="polite"></div>
+    <p id="no-results" style="display:none; font-weight:600; color:#7a2b33;">No results found.</p>
+  </section>
+</main>
+
+<script>
+  // Navigation logic
+  const navButtons = document.querySelectorAll('nav button.nav-btn');
+  const pages = document.querySelectorAll('section.page');
+  const searchResultsSection = document.getElementById('search-results');
+  const resultsList = document.getElementById('results-list');
+  const noResultsText = document.getElementById('no-results');
+  const searchInput = document.getElementById('search-input');
+  const searchClearBtn = document.getElementById('search-clear');
+
+  function setActivePage(pageId) {
+    // Hide search results when navigating normally
+    searchResultsSection.style.display = 'none';
+    searchInput.value = '';
+    searchClearBtn.style.display = 'none';
+
+    pages.forEach(page => {
+      page.classList.toggle('active', page.id === pageId);
+      if (page.id === pageId) {
+        page.setAttribute('tabindex', '0');
+        page.focus();
+      } else {
+        page.setAttribute('tabindex', '-1');
+      }
+    });
+    navButtons.forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.target === pageId);
+      btn.setAttribute('aria-current', btn.dataset.target === pageId ? 'page' : 'false');
+    });
+
+    // Reset order summary on navigation to order page
+    if (pageId === "order") {
+      document.getElementById('order-summary').style.display = 'none';
+      document.getElementById('order-form').reset();
+      document.getElementById('delivery-details').style.display = 'none';
+    }
+    // Reset contact feedback on navigation to contact page
+    if (pageId === "contact") {
+      document.getElementById('contact-feedback').style.display = 'none';
+      document.getElementById('contact-form').reset();
+    }
+  }
+
+  navButtons.forEach(btn => {
+    btn.addEventListener('click', () => setActivePage(btn.dataset.target));
+  });
+
+  // Order form delivery option toggle
+  const deliverySelect = document.getElementById('delivery-select');
+  const deliveryDetails = document.getElementById('delivery-details');
+
+  deliverySelect.addEventListener('change', () => {
+    if (deliverySelect.value === 'home-delivery') {
+      deliveryDetails.style.display = 'block';
+      document.getElementById('address-input').setAttribute('required', 'true');
+      document.getElementById('phone-input').setAttribute('required', 'true');
+    } else {
+      deliveryDetails.style.display = 'none';
+      document.getElementById('address-input').removeAttribute('required');
+      document.getElementById('phone-input').removeAttribute('required');
+      document.getElementById('address-input').value = '';
+      document.getElementById('phone-input').value = '';
+    }
+  });
+
+  // Order form submission handling
+  document.getElementById('order-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const foodSelect = document.getElementById('food-select');
+    const quantityInput = document.getElementById('quantity-input');
+    const deliveryOption = document.getElementById('delivery-select');
+    const addressInput = document.getElementById('address-input');
+    const phoneInput = document.getElementById('phone-input');
+    const orderSummary = document.getElementById('order-summary');
+
+    // Validate food chosen
+    if (!foodSelect.value) {
+      alert('Please select a food item.');
+      return;
+    }
+
+    // Validate quantity
+    const quantity = parseInt(quantityInput.value, 10);
+    if (isNaN(quantity) || quantity < 1 || quantity > 20) {
+      alert('Please enter a quantity between 1 and 20.');
+      return;
+    }
+
+    // Validate delivery option chosen
+    if (!deliveryOption.value) {
+      alert('Please select a delivery option.');
+      return;
+    }
+
+    // For home delivery validate address and phone
+    if (deliveryOption.value === 'home-delivery') {
+      if (!addressInput.value.trim()) {
+        alert('Please enter your delivery address.');
+        return;
+      }
+      if (!phoneInput.value.trim()) {
+        alert('Please enter your phone number.');
+        return;
+      }
+      // Basic phone number pattern check
+      const phonePattern = /^\+?\d{7,15}$/;
+      const phoneClean = phoneInput.value.replace(/\s+/g, '');
+      if (!phonePattern.test(phoneClean)) {
+        alert('Please enter a valid phone number with 7 to 15 digits, optionally starting with +. Example: +26771234567');
+        return;
+      }
+    }
+
+    // Calculate total cost
+    const price = Number(foodSelect.options[foodSelect.selectedIndex].dataset.price);
+    const deliveryCost = deliveryOption.value === 'home-delivery' ? 20 : 0;
+    const totalCost = quantity * price + deliveryCost;
+
+    // Prepare summary text
+    let summaryText = `<h3>Order Summary</h3>`;
+    summaryText += `<p><strong>Dish:</strong> ${foodSelect.value}</p>`;
+    summaryText += `<p><strong>Quantity:</strong> ${quantity}</p>`;
+    summaryText += `<p><strong>Delivery:</strong> ${deliveryOption.options[deliveryOption.selectedIndex].text}</p>`;
+    if (deliveryOption.value === 'home-delivery') {
+      summaryText += `<p><strong>Delivery Address:</strong> ${addressInput.value.trim()}</p>`;
+      summaryText += `<p><strong>Phone:</strong> ${phoneInput.value.trim()}</p>`;
+    }
+    summaryText += `<p><strong>Total Cost:</strong> P${totalCost}</p>`;
+    summaryText += `<p>Thank you for ordering with Trad Bites! Your order is being processed.</p>`;
+
+    orderSummary.innerHTML = summaryText;
+    orderSummary.style.display = 'block';
+
+    // Reset form except for displayed summary
+    this.reset();
+    deliveryDetails.style.display = 'none';
+  });
+
+  // Contact form submission handling - simulate sending message
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const nameInput = document.getElementById('name-input');
+    const emailInput = document.getElementById('email-input');
+    const messageTextarea = document.getElementById('message-textarea');
+    const feedback = document.getElementById('contact-feedback');
+
+    if (!nameInput.value.trim()) {
+      alert('Please enter your name.');
+      return;
+    }
+    if (!emailInput.value.trim()) {
+      alert('Please enter your email.');
+      return;
+    }
+    if (!messageTextarea.value.trim()) {
+      alert('Please enter your message.');
+      return;
+    }
+    // Basic email format check
+    const emailPattern = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+    if (!emailPattern.test(emailInput.value)) {
+      alert('Please enter a valid email address.');
+      return;
+    }
+
+    // "Send" message (simulate)
+    feedback.textContent = `Thank you, ${nameInput.value.trim()}! Your message has been received. We will get back to you soon.`;
+    feedback.style.display = 'block';
+
+    // Reset form
+    this.reset();
+  });
+
+  // Search functionality
+  function escapeRegExp(string) {
+    return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  }
+
+  function highlightText(text, term) {
+    if (!term) return text;
+    const pattern = new RegExp(`(${escapeRegExp(term)})`, 'gi');
+    return text.replace(pattern, '<span class="highlight">$1</span>');
+  }
+  
+  function getTextSnippet(text, term, snippetLength=120) {
+    const pattern = new RegExp(term, 'i');
+    const match = text.search(pattern);
+    if (match === -1) {
+      return '';
+    }
+    const start = Math.max(0, match - snippetLength/3);
+    const end = Math.min(text.length, match + snippetLength * 2/3);
+    let snippet = text.substring(start, end);
+    if (start > 0) snippet = '...' + snippet;
+    if (end < text.length) snippet = snippet + '...';
+    return snippet;
+  }
+
+  function searchSite(query) {
+    if (!query) return [];
+
+    query = query.trim().toLowerCase();
+    if (query.length === 0) return [];
+
+    let results = [];
+
+    for (let page of pages) {
+      const pageTitle = page.querySelector('h1, h2')?.textContent || page.id;
+      let contentText = page.textContent.toLowerCase();
+      if (contentText.includes(query)) {
+        // Extract a snippet around the first occurrence
+        const fullText = page.textContent;
+        const snippet = getTextSnippet(fullText, query);
+        results.push({ 
+          pageId: page.id, 
+          pageTitle,
+          snippet,
+          rawText: fullText
+        });
+      }
+    }
+    return results;
+  }
+
+  function displaySearchResults(results, query) {
+    resultsList.innerHTML = '';
+    if (results.length === 0) {
+      noResultsText.style.display = 'block';
+      return;
+    }
+    noResultsText.style.display = 'none';
+
+    results.forEach(result => {
+      // Highlight matched terms in snippet
+      const highlightedSnippet = highlightText(result.snippet, query);
+
+      const div = document.createElement('div');
+      div.classList.add('result-item');
+      div.innerHTML = `
+        <div class="result-page-title">${result.pageTitle}</div>
+        <div class="result-text">${highlightedSnippet}</div>
+        <button type="button" class="go-to-page" data-page="${result.pageId}" style="margin-top:6px; background:#7a2b33; color:#fff5f5; border:none; border-radius:6px; padding:6px 10px; cursor:pointer;">View ${result.pageTitle}</button>
+      `;
+      resultsList.appendChild(div);
+    });
+
+    // Add event listeners on buttons to jump to page
+    const gotoBtns = resultsList.querySelectorAll('button.go-to-page');
+    gotoBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const targetPage = btn.getAttribute('data-page');
+        setActivePage(targetPage);
+        // Clear search input to show normal pages again
+        clearSearch();
+      });
+    });
+  }
+
+  function clearSearch() {
+    searchInput.value = '';
+    searchClearBtn.style.display = 'none';
+    searchResultsSection.style.display = 'none';
+    pages.forEach(page => page.style.display = '');
+    navButtons.forEach(btn => btn.disabled = false);
+  }
+
+  searchInput.addEventListener('input', () => {
+    const query = searchInput.value.trim();
+    if (query.length === 0) {
+      clearSearch();
+      return;
+    }
+    searchClearBtn.style.display = 'inline';
+    const results = searchSite(query);
+    // Show search results section and hide normal pages
+    searchResultsSection.style.display = 'block';
+    pages.forEach(page => page.style.display = 'none');
+    navButtons.forEach(btn => btn.disabled = true);
+    displaySearchResults(results, query);
+  });
+
+  searchClearBtn.addEventListener('click', () => {
+    clearSearch();
+    searchInput.focus();
+  });
+
+</script>
+
+</body>
+</html>
