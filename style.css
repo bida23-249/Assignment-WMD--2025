@@ -34,7 +34,7 @@
   .slideshow-container {
     position: relative;
     max-width: 100%;
-      height: auto;
+
     width: 90%;
     border-radius: 12px;
     overflow: hidden;
@@ -48,7 +48,8 @@
     animation-duration: 1s;
   }
   .slide img {
-    width: 100%;
+    max-width: 100%;
+      height:auto;
     display: block;
     border-radius: 12px;
   }
