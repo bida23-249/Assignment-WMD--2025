@@ -59,6 +59,79 @@
 </div>  
   
 </div>
+    
+<script>
+  let slideIndex = 0;
+  const slides = document.querySelectorAll('.slide');
+  const dots = document.querySelectorAll('.dot');
+  const prevBtn = document.querySelector('.prev');
+  const nextBtn = document.querySelector('.next');
+  let slideInterval;
+
+  function showSlide(index) {
+    if(index >= slides.length) {
+      slideIndex = 0;
+    }
+    if(index < 0) {
+      slideIndex = slides.length - 1;
+    }
+    slides.forEach((slide, i) => {
+      slide.style.display = (i === slideIndex) ? 'block' : 'none';
+    });
+    dots.forEach((dot, i) => {
+      dot.className = (i === slideIndex) ? 'dot active' : 'dot';
+    });
+  }
+
+  function nextSlide() {
+    slideIndex++;
+    showSlide(slideIndex);
+  }
+
+  function prevSlide() {
+    slideIndex--;
+    showSlide(slideIndex);
+  }
+
+  function setCurrentSlide(index) {
+    slideIndex = index;
+    showSlide(slideIndex);
+  }
+
+  function startAutoSlide() {
+    slideInterval = setInterval(() => {
+      nextSlide();
+    }, 5000);
+  }
+
+  function stopAutoSlide() {
+    clearInterval(slideInterval);
+  }
+
+  prevBtn.addEventListener('click', () => {
+    prevSlide();
+    stopAutoSlide();
+    startAutoSlide();
+  });
+
+  nextBtn.addEventListener('click', () => {
+    nextSlide();
+    stopAutoSlide();
+    startAutoSlide();
+  });
+
+  dots.forEach((dot, idx) => {
+    dot.addEventListener('click', () => {
+      setCurrentSlide(idx);
+      stopAutoSlide();
+      startAutoSlide();
+    });
+  });
+
+  // Initialize
+  showSlide(slideIndex);
+  startAutoSlide();
+</script>
 
   <section id="menu" class="page" tabindex="0" aria-label="Menu page">
     <h2>Our Menu</h2>
